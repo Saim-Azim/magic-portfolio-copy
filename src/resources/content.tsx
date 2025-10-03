@@ -2,20 +2,20 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Saim",
+  lastName: "Azim Qureshi",
+  name: `Saim Azim Qureshi`,
+  role: "Software Developer (React)",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "saimqureshi647@gmail.com",
+  location: "Asia/Kolkata", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Hindi"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
   display: true,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  description: <>Weekly insights about React development, MERN stack, and modern web technologies</>,
 };
 
 const social: Social = [
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/saim-qureshi",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/saim-azim-79563b252/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Phone",
+    icon: "phone",
+    link: "tel:+917620619373",
   },
   {
     name: "Email",
@@ -49,30 +49,24 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Building scalable web and mobile applications with React</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">React Developer</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
           Featured work
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Saim, a Software Developer with 3+ years of experience building scalable web and mobile applications.
+      <br /> Proven expertise in React, MERN stack, and TypeScript with hands-on experience in RESTful API design and React Native.
     </>
   ),
 };
@@ -98,9 +92,10 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Saim is a Pune-based Software Developer with 3+ years of experience building scalable web and mobile applications.
+        Proven expertise in crafting performant, maintainable React applications and optimizing frontend performance
+        across large codebases. Comfortable across the MERN stack and TypeScript, with hands-on experience in
+        RESTful API design, JWT-based authentication, and React Native for cross-platform mobile features.
       </>
     ),
   },
@@ -109,41 +104,49 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "ABL INFOTECH",
+        timeframe: "September 2022 - Present",
+        role: "Mobile and Web  Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Implemented advanced scheduling by customizing and integrating React-big-calendar with React.js,
+            enabling event creation, modification, and management, improving scheduling efficiency by 30%.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
-        ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed a real-time alerts and notifications module using Redux, async API integrations, and WebSockets,
+            delivering instant alerts with read/unread tracking and increasing user engagement.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Engineered a data-driven business dashboard with role-based access control (RBAC), integrating revenue metrics,
+            peak-hour analysis, and customer-base insights via Redux Toolkit and REST APIs, reducing data retrieval time by 40%.
+          </>,
+          <>
+            Automated payroll reporting workflows with API-driven report generation, scheduled tasks, and SMTP email notifications,
+            cutting manual errors by 25% and accelerating delivery.
+          </>,
+          <>
+            Optimized React rendering and state management by applying memoization, lazy loading, and code splitting,
+            reducing page load time by 22%.
+          </>,
+          <>
+            Built news module in React Native with API-driven content delivery, Redux state management, and Firebase Analytics,
+            tracking real-time engagement to inform product decisions.
+          </>,
+          <>
+            Developed event scheduling feature using react-native-calendar-events and Redux integration,
+            improving appointment adherence by 35%.
+          </>,
+          <>
+            Implemented secure Node.js backend logic with hashed/standardized IDs, JWT authentication,
+            and bcrypt password hashing to ensure strong data protection.
+          </>,
+          <>
+            Architected a school management portal with React.js, React Router, Redux Toolkit, and Axios,
+            supporting dynamic child profiles and internationalized school data.
+          </>,
+          <>
+            Built a responsive back-to-school questionnaire system using React hooks, Redux Thunk, and Tailwind CSS,
+            reducing parent onboarding time by 40%.
           </>,
         ],
         images: [],
@@ -155,12 +158,8 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Savitribai Phule University",
+        description: <>M.Sc Computer Science - 2024</>,
       },
     ],
   },
@@ -169,61 +168,72 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "Frontend Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Expert in React.js, React Native, Next.js with Redux for state management and modern CSS frameworks.</>
         ),
         tags: [
           {
-            name: "Figma",
-            icon: "figma",
+            name: "React",
+            icon: "react",
           },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "Next.js",
-        description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
-        ),
-        tags: [
           {
             name: "JavaScript",
             icon: "javascript",
           },
           {
+            name: "TypeScript",
+            icon: "typescript",
+          },
+          {
             name: "Next.js",
             icon: "nextjs",
           },
+        ],
+        images: [],
+      },
+      {
+        title: "Backend & Database",
+        description: (
+          <>Building robust backends with Node.js, Express.js, MongoDB, and Firebase with JWT authentication.</>
+        ),
+        tags: [
           {
-            name: "Supabase",
-            icon: "supabase",
+            name: "Node.js",
+            icon: "nodejs",
+          },
+          {
+            name: "MongoDB",
+            icon: "mongodb",
+          },
+          {
+            name: "Firebase",
+            icon: "firebase",
           },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
+        images: [],
+      },
+      {
+        title: "Tools & DevOps",
+        description: (
+          <>Proficient with Git, REST APIs, Postman, Jira, Agile methodologies, and basic AWS & Docker knowledge.</>
+        ),
+        tags: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
+            name: "Git",
+            icon: "git",
+          },
+          {
+            name: "AWS",
+            icon: "aws",
+          },
+          {
+            name: "Docker",
+            icon: "docker",
           },
         ],
-      },  
+        images: [],
+      },
     ],
   },
 };
@@ -231,7 +241,7 @@ const about: About = {
 const blog: Blog = {
   path: "/blog",
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "Writing about React and web development...",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -241,7 +251,7 @@ const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  description: `React and MERN stack projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };
