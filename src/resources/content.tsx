@@ -14,7 +14,7 @@ const person: Person = {
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&apos;s Newsletter</>,
   description: <>Weekly insights about React development, MERN stack, and modern web technologies</>,
 };
 
@@ -65,7 +65,7 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Saim, a Software Developer with 3+ years of experience building scalable web and mobile applications.
+      I&apos;m Saim, a Software Developer with 3+ years of experience building scalable web and mobile applications.
       <br /> Proven expertise in React, MERN stack, and TypeScript with hands-on experience in RESTful API design and React Native.
     </>
   ),
